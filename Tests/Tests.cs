@@ -6,7 +6,7 @@ using Models;
 namespace Test
 {
     [TestClass]
-    public class AhorcadoTest
+    public class Tests
     {
         [TestMethod]
         public void Ingresar_Palabra_Vacia()
