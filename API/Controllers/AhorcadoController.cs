@@ -17,7 +17,7 @@ namespace API.Controllers
         [HttpGet("{palabra}")]
         public ActionResult<AhorcadoResponse> NewGame(string palabra)
         {
-            return Ok(_app.NewGame(palabra));
+            return Ok(_app.NewGame(palabra)); // Dummy commit
         }
 
         [HttpPost]
