@@ -55,6 +55,8 @@ namespace AccTests.TestCases
         public void EndTest()
         {
             driver.Close();
+            driver.Dispose();
+            driver.Quit();
         }
     }
 }
