@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Application;
 using Domain;
 using Models;
- 
+
 namespace Test
 {
     [TestClass]
@@ -313,7 +313,7 @@ namespace Test
         {
             // Arrange
             App app = new App();
-            app.NewGame("automovil");
+            app.NewGame("automoviles");
 
             // Act
             app.ArriesgarLetra(new AhorcadoRequest { Letra = "a" });
