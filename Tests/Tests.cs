@@ -313,7 +313,7 @@ namespace Test
         {
             // Arrange
             App app = new App();
-            app.NewGame("automoviles");
+            app.NewGame("automovil");
 
             // Act
             app.ArriesgarLetra(new AhorcadoRequest { Letra = "a" });
