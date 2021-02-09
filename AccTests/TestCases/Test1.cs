@@ -41,6 +41,7 @@ namespace AccTests.TestCases
                 btnArriesgarLetra.Click();
             });
 
+            wait.Until(x => x.FindElement(By.Id("gameOverMessage")));
             bool isPresent = driver.FindElements(By.Id("gameOverMessage")).Count > 0;
 
             var txtIntentos = driver.FindElement(By.Id("txtIntentos"));

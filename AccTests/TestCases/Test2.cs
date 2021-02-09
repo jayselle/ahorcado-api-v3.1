@@ -41,6 +41,7 @@ namespace AccTests.TestCases
                 btnArriesgarLetra.Click();
             });
 
+            wait.Until(x => x.FindElement(By.Id("winMessage")));
             bool isPresent = driver.FindElements(By.Id("winMessage")).Count > 0;
 
             // Asset
