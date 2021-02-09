@@ -49,7 +49,7 @@ namespace AccTests.TestCases
 
             // Asset
             Assert.IsTrue(isPresent);
-            Assert.AreEqual(0, intentos);
+            Assert.AreEqual(1, intentos);
         }
 
         [TearDown]
