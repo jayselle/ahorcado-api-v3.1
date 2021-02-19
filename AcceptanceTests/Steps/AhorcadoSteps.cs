@@ -58,7 +58,7 @@ namespace AcceptanceTests.Steps
         [Then(@"Deberia ver el mensaje de que perdi")]
         public void ThenDeberiaVerElMensajeDeQuePerdi()
         {
-            Assert.That(ahorcadoPage.IsGameOverMessageDisplayed, Is.False);
+            Assert.That(ahorcadoPage.IsGameOverMessageDisplayed, Is.True);
         }
 
         [AfterScenario]

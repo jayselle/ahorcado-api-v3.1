@@ -23,7 +23,7 @@ namespace API
             services.AddScoped<App>();
             services.AddCors(opt => {
                 opt.AddPolicy("CorsPolicy", policy => {
-                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000", "https://ahorcado-web-v3-1.herokuapp.com");
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000", "http://192.168.99.1:3000", "https://ahorcado-web-v3-1.herokuapp.com");
                 });
             });
         }
