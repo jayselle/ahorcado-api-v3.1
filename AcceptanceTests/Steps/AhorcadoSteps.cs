@@ -19,7 +19,7 @@ namespace AcceptanceTests.Steps
         public void TestInitialize()
         {
             IWebDriver webDriver = new ChromeDriver();
-            webDriver.Navigate().GoToUrl("https://ahorcado-web-v3-1.herokuapp.com/");
+            webDriver.Navigate().GoToUrl("http://192.168.99.1:3000");
             WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
             ahorcadoPage = new AhorcadoPage(webDriver, webDriverWait);
         }
