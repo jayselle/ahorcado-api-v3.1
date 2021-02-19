@@ -1,7 +1,7 @@
 ﻿using AcceptanceTests.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace AcceptanceTests.Steps
         [BeforeScenario]
         public void TestInitialize()
         {
-            IWebDriver webDriver = new ChromeDriver();
+            IWebDriver webDriver = new FirefoxDriver();
             webDriver.Navigate().GoToUrl("http://localhost:3000/");
             WebDriverWait webDriverWait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
             ahorcadoPage = new AhorcadoPage(webDriver, webDriverWait);
